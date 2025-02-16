@@ -1,0 +1,94 @@
+body, html {
+  background-color: rgb(18, 24, 24);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#header{
+  background-color: rgb(95, 148, 245);
+  width: 100%;
+  height: 10vh;
+  object-fit: cover;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#name{
+  font-family: "Nosifer", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0px;
+  padding: 10px;
+}
+
+#header p{
+  margin: 0px;
+  padding: 10px;
+  font-family: "Staatliches", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#content{
+  background-color: rgb(21, 43, 59);
+  border-radius: 10px;
+  width: 130vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  min-height: fit-content; 
+  max-width: 100%; 
+  
+}
+
+#content img{
+  width: 128vh;
+  padding: 10px;
+  object-fit: cover;
+}
+
+.title{
+  font-family: "Staatliches", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: whitesmoke;
+  font-size: 35px;
+}
+
+.text{
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  color: whitesmoke;
+  font-size: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+
+
+/* website name
+  font-family: "Nosifer", serif;
+  font-weight: 400;
+  font-style: normal;
+
+/* title
+  font-family: "Staatliches", serif;
+  font-weight: 400;
+  font-style: normal;
+
+/* text
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
