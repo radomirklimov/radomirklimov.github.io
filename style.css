@@ -52,13 +52,34 @@ p{
   display: flex;
   flex-wrap: wrap; 
   gap: 10px; 
+  justify-content: start;
 }
 
 .song {
   width: calc(25% - 10px);
-  box-sizing: border-box; 
+  box-sizing: border-box;
   position: relative;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .song {
+    width: calc(33.33% - 10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .song {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 480px) {
+  .song {
+    width: 100%;
+  }
 }
 
 .song img {
