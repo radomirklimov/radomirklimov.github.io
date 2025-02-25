@@ -47,21 +47,3 @@ function selected(id){
 
   }
 });
-
-
-// if(event){
-//   const audio = document.getElementById("audio");
-//   switch(event.target.id) {
-//     case "mv":
-//       audio.src = "music/мирный воин 19.mp3";
-//       audio.play();
-//       break;
-//     case "cpc":
-//       audio.src = "music/сам по сеебе озон";
-//       audio.play();
-//       break;
-//     default:
-//       audio.src = "music/ухилянт 17";
-//       audio.play();
-//   }
-// }
