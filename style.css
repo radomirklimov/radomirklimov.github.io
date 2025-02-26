@@ -12,6 +12,7 @@ body{
 p{
   color: whitesmoke;
   font-size: 30px;
+  align-self: center;
 }
 
 #mainSong{
@@ -159,7 +160,7 @@ p{
 
 audio {
   position: fixed;
-  top: 95%;       
+  top: 90%;       
   left: 20%;
   width: 60%;
   height: 40px;
