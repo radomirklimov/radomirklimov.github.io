@@ -160,12 +160,30 @@ p{
 
 audio {
   position: fixed;
-  top: 90%;       
+  top: 95%;       
   left: 5%;
   width: 90%;
   height: 40px;
   outline: none;
   display: block;
+}
+
+@media (max-width: 768px) {
+  audio {
+    top: 85%;  
+  }
+}
+
+@media (max-width: 480px) {
+  audio {
+    top: 90%;
+  }
+}
+
+.song img {
+  width: 100%;
+  height: auto;
+  border-radius: 30px 30px 0px 0px;
 }
 
 audio::-webkit-media-controls-panel {
