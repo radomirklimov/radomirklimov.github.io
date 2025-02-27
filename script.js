@@ -25,6 +25,18 @@ function playSong(event, id){
           audio.src = "music/ухилянт 17.mp3";
           audio.play();
           break;
+        case "z":
+          audio.src = "music2/Заколебался16.mp3";
+          audio.play();
+          break;
+        case "mmc":
+          audio.src = "music2/мила мое солнышко8.mp3";
+          audio.play();
+          break;
+        case "ptbm":
+          audio.src = "music2/Пчелка трудится Бизнес мутится.mp3";
+          audio.play();
+          break;
       }
 }
 
@@ -37,7 +49,7 @@ function selected(id){
   songDiv.classList.add("selected")
 }
 
-["dmtsm", "mv", "cpc", "chnnd", "n", "y"].forEach(id => {
+["dmtsm", "mv", "cpc", "chnnd", "n", "y", "z", "mmc", "ptbm"].forEach(id => {
   const element = document.getElementById(id);
   if (element) {
     element.addEventListener("click", (event) => {
