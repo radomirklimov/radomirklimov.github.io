@@ -203,6 +203,8 @@ audio::-webkit-media-controls-panel {
   object-fit: cover;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap; 
+  gap: 10px; 
 }
 
 a{
