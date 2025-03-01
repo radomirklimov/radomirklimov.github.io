@@ -73,6 +73,9 @@ p{
   display: flex;
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap; 
+  gap: 10px; 
+  justify-content: start;
 }
 
 #songLibrery{
@@ -87,6 +90,7 @@ p{
   box-sizing: border-box;
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
 }
@@ -163,7 +167,7 @@ p{
 
 audio {
   position: fixed;
-  top: 94%;       
+  bottom: 2%;       
   left: 5%;
   width: 90%;
   height: 40px;
@@ -173,13 +177,13 @@ audio {
 
 @media (max-width: 768px) {
   audio {
-    top: 85%;  
+    bottom: 2%;  
   }
 }
 
 @media (max-width: 480px) {
   audio {
-    top: 90%;
+    bottom: 2%;
   }
 }
 
