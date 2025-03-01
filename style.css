@@ -52,7 +52,6 @@ p{
 
 @media (max-width: 768px) {
   #mainSong {
-    width: 95%;
     max-height: 60vh;
   }
 
@@ -206,12 +205,6 @@ audio::-webkit-media-controls-panel {
   flex-wrap: wrap; 
   gap: 10px; 
 }
-
-/* @media (max-width: 768px) {
-  #footer {
-    padding-bottom: 20%;
-  }
-} */
 
 @media (max-width: 480px) {
   #footer {
