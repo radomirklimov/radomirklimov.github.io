@@ -215,7 +215,7 @@ audio::-webkit-media-controls-panel {
 
 @media (max-width: 480px) {
   #footer {
-    padding-bottom: 50%;
+    padding-bottom: 80%;
   }
 }
 
