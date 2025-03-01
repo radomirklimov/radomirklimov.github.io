@@ -1,61 +1,37 @@
-function playSong(event, id){ 
+document.addEventListener("DOMContentLoaded", () => { 
   const audio = document.getElementById("audio");
-  switch(id) {
-        case "dmtsm":
-          audio.src = "music/донт мистейк барики3.mp3";
-          audio.play();
-          break;
-        case "mv":
-          audio.src = "music/мирный воин 19.mp3";
-          audio.play();
-          break;
-        case "cpc":
-          audio.src = "music/сам по сеебе озон.mp3";
-          audio.play();
-          break;
-        case "chnnd":
-          audio.src = "music/чого не на13.mp3"
-          audio.play();
-          break;
-        case "n":
-          audio.src = "music/нирванушка18.mp3";
-          audio.play();
-          break;
-        case "y":
-          audio.src = "music/ухилянт 17.mp3";
-          audio.play();
-          break;
-        case "z":
-          audio.src = "music2/Заколебался16.mp3";
-          audio.play();
-          break;
-        case "mmc":
-          audio.src = "music2/мила мое солнышко8.mp3";
-          audio.play();
-          break;
-        case "ptbm":
-          audio.src = "music2/Пчелка трудится Бизнес мутится.mp3";
-          audio.play();
-          break;
-      }
-}
+  
+  function playAndSelectSong(event) {
+    const id = event.currentTarget.dataset.id;
+    if (!id) return;
 
-function selected(id){
-  document.querySelectorAll(".song.selected").forEach(song => {
-    song.classList.remove("selected");
-  });
+    // Update audio source and play
+    const songSources = {
+      "dmtsm": "music/донт мистейк барики3.mp3",
+      "mv": "music/мирный воин 19.mp3",
+      "cpc": "music/сам по сеебе озон.mp3",
+      "chnnd": "music/чого не на13.mp3",
+      "n": "music/нирванушка18.mp3",
+      "y": "music/ухилянт 17.mp3",
+      "z": "music2/Заколебался16.mp3",
+      "mmc": "music2/мила мое солнышко8.mp3",
+      "ptbm": "music2/Пчелка трудится Бизнес мутится.mp3"
+    };
 
-  const songDiv = document.getElementById(id).closest(".song");
-  songDiv.classList.add("selected")
-}
+    if (songSources[id]) {
+      audio.src = songSources[id];
+      audio.play();
+    }
 
-["dmtsm", "mv", "cpc", "chnnd", "n", "y", "z", "mmc", "ptbm"].forEach(id => {
-  const element = document.getElementById(id);
-  if (element) {
-    element.addEventListener("click", (event) => {
-      playSong(event, id)
-      selected(id)
-    });
+    // Remove previous selection
+    document.querySelectorAll(".song.selected").forEach(song => song.classList.remove("selected"));
 
+    // Add selection to clicked song
+    event.currentTarget.classList.add("selected");
   }
+
+  // Attach event listeners dynamically
+  document.querySelectorAll(".song").forEach(song => {
+    song.addEventListener("click", playAndSelectSong);
+  });
 });

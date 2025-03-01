@@ -10,13 +10,13 @@
 </head>
 <body>
   <div id="site-holder">
-    <div id="mainSong" class="song">
+    <div id="mainSong" class="song" data-id="dmtsm">
       <p id="newest">The newest</p>
       <video autoplay loop muted poster="imgs/main song replacer.jpg">
         <source src="imgs/main song vidio.mp4" type="video/mp4">
       Your browser does not support the video tag.
       </video>
-      <div id="dmtsm" class="play-button">
+      <div class="play-button">
         <i class="fa fa-play-circle"></i>
       </div>
       <div class="song-title">
@@ -24,70 +24,70 @@
       </div>
     </div>
     <div id="songLibrery">
-      <div class="song">
+      <div class="song" data-id="mv">
         <img src="imgs/photo_1_2025-02-24_17-34-35.jpg" alt="">
-        <div id="mv" class="play-button">
+        <div class="play-button">
           <i class="fa fa-play-circle"></i>
         </div>
         <div class="song-title">
           <p>Мирный Воин</p>
         </div>
       </div>
-      <div class="song">
+      <div class="song" data-id="cpc">
         <img src="imgs/photo_2_2025-02-24_17-34-35.jpg" alt="">
-        <div id="cpc" class="play-button">
+        <div class="play-button">
           <i class="fa fa-play-circle"></i>
         </div>
         <div class="song-title">
           <p>Сам по СЕБЕ</p>
         </div>
       </div>
-      <div class="song">
+      <div class="song" data-id="chnnd">
         <img src="imgs/photo_3_2025-02-24_17-34-35.jpg" alt="">
-        <div id="chnnd" class="play-button">
+        <div class="play-button">
           <i class="fa fa-play-circle"></i>
         </div>
         <div class="song-title">
           <p>Чого не на держанЇй!!!</p>
         </div>
       </div>
-      <div class="song">
+      <div class="song" data-id="n">
         <img src="imgs/photo_4_2025-02-24_17-34-35.jpg" alt="">
-        <div id="n" class="play-button">
+        <div class="play-button">
           <i class="fa fa-play-circle"></i>
         </div>
         <div class="song-title">
           <p>Нирванушка</p>
         </div>
       </div>
-      <div class="song">
+      <div class="song" data-id="y">
         <img src="imgs/photo_5_2025-02-24_17-34-35.jpg" alt="">
-        <div id="y" class="play-button">
+        <div class="play-button">
           <i class="fa fa-play-circle"></i>
         </div>
         <div class="song-title">
           <p>Ухилянт</p>
         </div>
       </div>
-      <div class="song">
+      <div class="song" data-id="z">
         <img src="imgs/photo_2_2025-02-27_09-55-17.jpg" alt="">
-        <div id="z" class="play-button">
+        <div class="play-button">
           <i class="fa fa-play-circle"></i>
         </div>
         <div class="song-title">
           <p>Заколебался</p>
         </div>
       </div>
-      <div class="song">
+      <div class="song" data-id="mmc">
         <img src="imgs/photo_3_2025-02-27_09-55-17.jpg" alt="">
-        <div id="mmc" class="play-button">
+        <div class="play-button">
           <i class="fa fa-play-circle"></i>
         </div>
         <div class="song-title">
           <p>Мила мое солнышко</p>
         </div>
       </div>
-      <div class="song">
+      <div class="song" data-id="ptbm">
         <img src="imgs/photo_2025-02-27_10-04-38.jpg" alt="">
         <div id="ptbm" class="play-button">
           <i class="fa fa-play-circle"></i>
@@ -113,14 +113,16 @@
       <a>
         <img src="imgs/telegram logo.png" alt="">
         <p>@TimofeyMokin</p>
+      </a>
       </div>
-    </div>
+  </div>
+  <div id="audio-player-container">
+    <audio id="audio" controls>
+      <source  src="music2/photo_2025" type="audio/ogg">
+      Your browser does not support the audio element.
+    </audio>
   </div>
 
-  <audio id="audio" controls>
-    <source  src="music2/photo_2025" type="audio/ogg">
-    Your browser does not support the audio element.
-  </audio>
   
 
   <script src="script.js"></script>
