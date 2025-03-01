@@ -207,15 +207,15 @@ audio::-webkit-media-controls-panel {
   gap: 10px; 
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   #footer {
     padding-bottom: 20%;
   }
-}
+} */
 
 @media (max-width: 480px) {
   #footer {
-    padding-bottom: 60%;
+    padding-bottom: 40%;
   }
 }
 
