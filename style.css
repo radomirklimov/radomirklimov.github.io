@@ -164,7 +164,7 @@ p{
 
 audio {
   position: fixed;
-  top: 95%;       
+  top: 94%;       
   left: 5%;
   width: 90%;
   height: 40px;
@@ -199,12 +199,24 @@ audio::-webkit-media-controls-panel {
   width: 100%;
   height: 100%;
   padding: 10px;
-  padding-bottom: 20%;
+  padding-bottom: 10%;
   object-fit: cover;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap; 
   gap: 10px; 
+}
+
+@media (max-width: 768px) {
+  #footer {
+    padding-bottom: 20%;
+  }
+}
+
+@media (max-width: 480px) {
+  #footer {
+    padding-bottom: 50%;
+  }
 }
 
 a{
