@@ -1,6 +1,6 @@
-document.addEventListener("DOMContentLoaded", () => { 
+document.addEventListener("DOMContentLoaded", () => {
   const audio = document.getElementById("audio");
-  
+
   function playAndSelectSong(event) {
     const id = event.currentTarget.dataset.id;
     if (!id) return;
@@ -39,8 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
 function toggleAbout() {
   var aboutSection = document.getElementById("aboutText");
   if (aboutSection.style.display === "none") {
-      aboutSection.style.display = "block";
+    aboutSection.style.display = "block";
   } else {
-      aboutSection.style.display = "none";
+    aboutSection.style.display = "none";
   }
 }
