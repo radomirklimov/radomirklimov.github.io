@@ -10,7 +10,7 @@ body{
 }
 
 #site-holder{
-  background-color: #e3f2fd43   ;
+  background-color: #101010;
   width: 80%;
   height: 100%;
 }
@@ -24,7 +24,6 @@ p{
 #mainSong{
   width: 100%;
   height: 40vh;
-  padding: 5px;
   object-fit: cover;
   display: flex;
   flex-direction: column;
@@ -37,7 +36,7 @@ p{
   height: 100%;
   max-height: 40vh;
   object-fit: cover;
-  border-radius: 30px;
+  padding: 10px;
 }
 
 #newest{
@@ -76,13 +75,14 @@ p{
 
 .song {
   position: relative;
-  width: calc(25% - 10px);
+  width: calc(25% - 0px);
+  max-width: 80vw; 
+  overflow: hidden;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
 }
 
 @media (max-width: 1024px) {
@@ -106,15 +106,15 @@ p{
 .song img {
   width: 100%;
   height: auto;
+  border: 10px solid #101010;
+  box-sizing: border-box;
 }
 
 .song-title { 
   position: absolute;
   bottom: 0;
   left: 0;
-  /* to make title match the img width */
-  width: 94.7%;
-  margin: 10px;
+  width: 100%;
   height: 30%;
   background: rgba(0, 0, 0, 0.5);
   display: flex;
@@ -123,6 +123,7 @@ p{
   color: white; 
   font-size: 20px;
   font-weight: bold; 
+  box-sizing: border-box;
 }
 
 .play-button {
@@ -185,12 +186,6 @@ audio {
   }
 }
 
-.song img {
-  width: 100%;
-  height: auto;
-  border-radius: 30px 30px 0px 0px;
-}
-
 audio::-webkit-media-controls-panel {
   background-color: #fffeee;
   border-radius: 10px;
@@ -222,7 +217,7 @@ a{
 }
 
 #footer p{
-  color: rgba(255, 255, 255, 0.629);
+  color: rgba(255, 255, 255, 0.759);
   font-style: italic;
   font-size: 24px;
 }
@@ -233,13 +228,17 @@ a{
 }
 
 #youtube:hover{
-  text-decoration: underline rgba(255, 0, 0, 0.499);
+  text-decoration: underline rgba(255, 0, 0, 0.8);
 }
 
 #tt:hover{
-  text-decoration: underline rgba(0, 174, 255, 0.499);
+  text-decoration: underline rgba(123, 0, 255, 0.8);
 }
 
 #inst:hover{
-  text-decoration: underline rgba(255, 0, 89, 0.499);
+  text-decoration: underline rgba(255, 0, 89, 0.8);
+}
+
+#telegram:hover{
+  text-decoration: underline rgba(0, 106, 255, 0.8);
 }
