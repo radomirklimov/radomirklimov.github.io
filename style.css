@@ -242,3 +242,38 @@ a{
 #telegram:hover{
   text-decoration: underline rgba(0, 106, 255, 0.8);
 }
+
+#headInfo{
+  width: 80%;
+  height: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#aboutText { 
+  display: none; 
+  margin-top: 20px; 
+  padding: 15px; 
+  border: 1px solid #ddd; 
+  background: #f9f9f9; 
+  font-family: Arial, sans-serif; 
+  text-align: center; 
+  margin: 50px;
+}
+
+#aboutText p{
+  color: black;
+}
+
+button { 
+  padding: 10px 20px; 
+  border: none;
+  background: #007bff; 
+  cursor: pointer; 
+  color: rgba(255, 255, 255, 0.8);
+}
+
+button:hover { 
+  background: #0056b3; 
+}
